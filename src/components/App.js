@@ -3,9 +3,14 @@
  *   All rights reserved.
  */
 import React from "react";
+import SearchBar from "./SearchBar";
 
 const App = () => {
-  return <h1>New App</h1>;
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  );
 };
 
 export default App;
