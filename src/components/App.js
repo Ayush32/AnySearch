@@ -6,12 +6,16 @@ import "./style.css";
 import React from "react";
 import SearchBar from "./SearchBar";
 
-const App = () => {
-  return (
-    <div id="container" className="ui container">
-      <SearchBar />
-    </div>
-  );
-};
-
+class App extends React.Component {
+  onSearchSubmit(term) {
+    console.log(term);
+  }
+  render() {
+    return (
+      <div id="container" className="ui container">
+        <SearchBar onSubmit={this.onSearchSubmit} />
+      </div>
+    );
+  }
+}
 export default App;
