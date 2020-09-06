@@ -4,6 +4,7 @@
  */
 import "./style.css";
 import React from "react";
+import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 import unsplash from "../api/unsplash";
 import ImageList from "./ImageList";
@@ -21,6 +22,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="container" className="ui container">
+        <Navbar />
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList images={this.state.images} />
       </div>

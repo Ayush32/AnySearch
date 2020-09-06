@@ -29,7 +29,6 @@ class SearchBar extends React.Component {
               value={this.state.term}
               onChange={(e) => this.setState({ term: e.target.value })}
             />
-            <i class="circular search link icon"></i>
           </div>
         </form>
       </div>
