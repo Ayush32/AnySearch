@@ -5,8 +5,11 @@
 import React from "react";
 
 const ImageList = (props) => {
-  console.log(props);
-  return <div>ImageList</div>;
+  const images = props.images.map((image) => {
+    // eslint-disable-next-line
+    return <img src={image.urls.regular} />;
+  });
+  return <div>{images}</div>;
 };
 
 export default ImageList;
