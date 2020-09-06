@@ -14,6 +14,9 @@ class SearchBar extends React.Component {
     this.props.onSubmit(this.state.term);
   };
 
+  // axios third part package
+  // function built into modern browsers
+
   render() {
     return (
       <div className="ui segment">
